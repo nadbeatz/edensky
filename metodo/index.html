@@ -59,6 +59,14 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
   *,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important;}
 }
 
+
+/* Mobile header alignment: logo optically flush to the left edge */
+@media(max-width:720px){
+ .site-header .wrap{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:max(8px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));}
+ .site-header .brand{margin-left:-34px;flex:0 0 auto;}
+ .site-header .brand img{display:block;}
+ .site-header .nav{justify-content:space-between;}
+}
 </style></head><body><header class="site-header"><div class="wrap nav">
 <a class="brand" href="/" aria-label="Eden Sky — início"><img src="/IMG_4649.png" alt="Logótipo Eden Sky"></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">☰</button>
