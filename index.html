@@ -137,7 +137,12 @@
   if(whatsappWindow){
    document.getElementById('form-status').textContent='O WhatsApp foi aberto. Reveja os dados e envie a mensagem para concluir o pedido.';
   }else{
-   const status=document.getElementById('form-status');\n   status.textContent='O navegador bloqueou a nova janela. ';\n   const fallback=document.createElement('a');\n   fallback.href=url;fallback.target='_blank';fallback.rel='noopener noreferrer';\n   fallback.textContent='Clique aqui para abrir o pedido no WhatsApp.';\n   status.appendChild(fallback);
+   const status=document.getElementById('form-status');
+   status.textContent='O navegador bloqueou a nova janela. ';
+   const fallback=document.createElement('a');
+   fallback.href=url;fallback.target='_blank';fallback.rel='noopener noreferrer';
+   fallback.textContent='Clique aqui para abrir o pedido no WhatsApp.';
+   status.appendChild(fallback);
   }
  });
 })();
