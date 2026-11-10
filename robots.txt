@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.edensky.org/sitemap.xml
+Sitemap: https://edensky.org/sitemap.xml
