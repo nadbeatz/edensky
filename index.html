@@ -89,7 +89,7 @@
 <span>Ministério da Energia e Águas</span><span>Ministério da Administração Pública, Trabalho e Segurança Social</span><span>IRSEA</span><span>Serviço de Migração e Estrangeiros</span><span>PRODEL</span><span>ENDE</span><span>Porto do Namibe, E.P.</span><span>Banco Sol</span><span>Caminho de Ferro de Moçâmedes, E.P.</span><span>FADEN</span><span>APLOP</span><span>APANG</span><span>Administração Municipal da Samba</span><span>Organizações Luzolo</span>
 </div></div></section>
 <section class="section contact-section" id="contacto"><div class="wrap contact-grid"><div><p class="eyebrow">Vamos conversar</p><h2>O próximo passo começa com uma conversa.</h2><p class="lead">Conte-nos o que pretende alcançar. A nossa equipa entrará em contacto para compreender o desafio e orientar os próximos passos.</p>
-<ul class="contact-list"><li><b>⌖</b><span>Centralidade do Kilamba, E25</span></li><li><b>☎</b><span><a href="tel:+244923914152">+244 923 914 152</a><br><a href="tel:+244926495060">+244 926 495 060</a></span></li><li><b>↗</b><a href="https://www.edensky.org" target="_blank" rel="noopener noreferrer">www.edensky.org</a></li></ul>
+<ul class="contact-list"><li><b>⌖</b><span>Centralidade do Kilamba, E25</span></li><li><b>☎</b><span><a href="tel:+244923914152">+244 923 914 152</a><br><a href="tel:+244926495060">+244 926 495 060</a></span></li><li><b>↗</b><a href="https://edensky.org" target="_blank" rel="noopener noreferrer">www.edensky.org</a></li></ul>
 </div>
 <div class="form-card" id="pedido"><h3>Solicitar uma proposta</h3><p>Preencha os dados. O pedido será preparado para envio directo pelo WhatsApp.</p>
 <form id="proposal-form">
@@ -111,7 +111,7 @@
  const menuButton=document.querySelector('.menu-toggle');
  const nav=document.querySelector('.nav-links');
  function closeMenu(){nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu');document.body.classList.remove('menu-open')}
- menuButton.addEventListener('click',function(){const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
+ menuButton.addEventListener('click',function(){const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');document.body.classList.toggle('menu-open',open)});
  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});
  const topLink=document.getElementById('back-top');
