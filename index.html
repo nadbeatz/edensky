@@ -4,9 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index,follow">
 <title>Eden Sky — Consultoria, Comunicação e Marketing</title>
 <meta name="description" content="A Eden Sky integra consultoria empresarial, comunicação institucional, marketing, branding e produção audiovisual em Angola.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="pt_AO">
+<meta name="twitter:title" content="Eden Sky — Sua marca, nosso compromisso">
+<meta name="twitter:description" content="Estratégia, criatividade e comunicação para impulsionar organizações.">
+<link rel="canonical" href="https://www.edensky.org/">
 <meta property="og:title" content="Eden Sky — Sua marca, nosso compromisso">
 <meta property="og:description" content="Estratégia, criatividade e comunicação para impulsionar organizações.">
 <meta property="og:image" content="https://raw.githubusercontent.com/nadbeatz/edensky/main/IMG_4649.png">
@@ -124,7 +130,12 @@
   ].join('\n');
   document.getElementById('form-status').textContent='A preparar o WhatsApp com o seu pedido…';
   const url='https://wa.me/244923914152?text='+encodeURIComponent(message);
-  window.open(url,'_blank','noopener,noreferrer');
+  const whatsappWindow=window.open(url,'_blank','noopener,noreferrer');
+  if(whatsappWindow){
+   document.getElementById('form-status').textContent='O WhatsApp foi aberto. Reveja os dados e envie a mensagem para concluir o pedido.';
+  }else{
+   document.getElementById('form-status').textContent='O navegador bloqueou a nova janela. Copie este endereço para abrir o pedido: '+url;
+  }
  });
 })();
 </script>
