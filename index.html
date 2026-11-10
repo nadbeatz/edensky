@@ -319,6 +319,26 @@ body{color-scheme:only light!important;}
  .hero:before{background-size:560px auto;background-position:58% center;opacity:.28}
  .site-header .brand{margin-left:0!important}
 }
+
+/* Circuitos electrónicos em destaque — reforço visual desktop e mobile */
+.hero:before{
+  opacity:.88!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='680' viewBox='0 0 900 680'%3E%3Cg fill='none' stroke='%2307aeb9' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round' opacity='.92'%3E%3Cpath d='M900 70H730l-58 58H520v76H390l-54 54H210'/%3E%3Cpath d='M900 185H790l-54 54H620v78H470l-52 52H300'/%3E%3Cpath d='M900 315H760l-55-55H570v-72H430l-52-52H250'/%3E%3Cpath d='M900 455H790l-55-55H620v-78H480l-50-50H330'/%3E%3Cpath d='M820 680v-95l-58-58V410h-78l-52-52V250'/%3E%3Cpath d='M660 680v-78l-48-48V440h-92l-48-48V300'/%3E%3Cpath d='M500 680v-95l-48-48V450h-82l-48-48V330'/%3E%3Cpath d='M900 565H760l-45-45H610v-65H500l-45-45H360'/%3E%3C/g%3E%3Cg fill='none' stroke='%23b99a57' stroke-width='2.2' opacity='.9'%3E%3Cpath d='M900 120H840l-32 32H700'/%3E%3Cpath d='M900 390H850l-34 34H740'/%3E%3Cpath d='M710 680v-42l-28-28V550'/%3E%3C/g%3E%3Cg fill='%2307aeb9'%3E%3Ccircle cx='210' cy='258' r='6'/%3E%3Ccircle cx='300' cy='421' r='6'/%3E%3Ccircle cx='250' cy='136' r='6'/%3E%3Ccircle cx='330' cy='402' r='6'/%3E%3Ccircle cx='500' cy='330' r='6'/%3E%3Ccircle cx='620' cy='319' r='6'/%3E%3C/g%3E%3Cg fill='%23b99a57'%3E%3Ccircle cx='700' cy='152' r='5'/%3E%3Ccircle cx='740' cy='424' r='5'/%3E%3Ccircle cx='682' cy='610' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 48% center;
+  background-size:min(88vw,900px) auto;
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.2) 18%,#000 62%);
+  filter:drop-shadow(0 0 5px rgba(7,174,185,.22));
+}
+@media(max-width:720px){
+  .hero:before{
+    opacity:.58!important;
+    background-size:590px auto;
+    background-position:58% center;
+    mask-image:linear-gradient(90deg,rgba(0,0,0,.12),#000 48%);
+  }
+}
+
 </style>
 </head>
 <body>
