@@ -284,6 +284,14 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
  .logo-panel{width:min(82%,250px)}
 }
 
+
+/* Mobile header alignment: logo optically flush to the left edge */
+@media(max-width:720px){
+ .site-header .wrap{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:max(8px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));}
+ .site-header .brand{margin-left:-34px;flex:0 0 auto;}
+ .site-header .brand img{display:block;}
+ .site-header .nav{justify-content:space-between;}
+}
 </style>
 </head>
 <body>
