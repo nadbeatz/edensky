@@ -12,7 +12,9 @@
 <meta property="og:locale" content="pt_AO">
 <meta name="twitter:title" content="Eden Sky — Sua marca, nosso compromisso">
 <meta name="twitter:description" content="Estratégia, criatividade e comunicação para impulsionar organizações.">
-<link rel="canonical" href="https://www.edensky.org/">
+<link rel="canonical" href="https://edensky.org/">
+<meta property="og:url" content="https://edensky.org/">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/nadbeatz/edensky/main/IMG_4649.png">
 <meta property="og:title" content="Eden Sky — Sua marca, nosso compromisso">
 <meta property="og:description" content="Estratégia, criatividade e comunicação para impulsionar organizações.">
 <meta property="og:image" content="https://raw.githubusercontent.com/nadbeatz/edensky/main/IMG_4649.png">
@@ -93,7 +95,8 @@
 <form id="proposal-form">
 <div class="form-grid">
 <div class="field"><label for="client-name">Nome *</label><input id="client-name" name="name" autocomplete="name" required maxlength="90" placeholder="O seu nome"></div>
-<div class="field"><label for="client-phone">Telefone *</label><input id="client-phone" name="phone" autocomplete="tel" required maxlength="30" placeholder="+244 ..."></div>
+<div class="field"><label for="client-phone">Telefone *</label><input id="client-phone" name="phone" autocomplete="tel" required maxlength="30" placeholder="+244 ..."
+ pattern="[+0-9() .-]{7,30}" title="Introduza um número de telefone válido." inputmode="tel"></div>
 <div class="field full"><label for="client-org">Empresa / organização</label><input id="client-org" name="organisation" autocomplete="organization" maxlength="100" placeholder="Nome da organização (opcional)"></div>
 <div class="field full"><label for="client-service">Serviço pretendido *</label><select id="client-service" name="service" required><option value="">Seleccione um serviço</option><option>Consultoria empresarial</option><option>Comunicação institucional</option><option>Marketing e branding</option><option>Produção audiovisual</option><option>Outro / ainda não definido</option></select></div>
 <div class="field full"><label for="client-message">Descreva brevemente o projecto *</label><textarea id="client-message" name="message" required minlength="10" maxlength="1200" placeholder="Quais são os seus objectivos e de que apoio precisa?"></textarea></div>
@@ -134,7 +137,7 @@
   if(whatsappWindow){
    document.getElementById('form-status').textContent='O WhatsApp foi aberto. Reveja os dados e envie a mensagem para concluir o pedido.';
   }else{
-   document.getElementById('form-status').textContent='O navegador bloqueou a nova janela. Copie este endereço para abrir o pedido: '+url;
+   const status=document.getElementById('form-status');\n   status.textContent='O navegador bloqueou a nova janela. ';\n   const fallback=document.createElement('a');\n   fallback.href=url;fallback.target='_blank';fallback.rel='noopener noreferrer';\n   fallback.textContent='Clique aqui para abrir o pedido no WhatsApp.';\n   status.appendChild(fallback);
   }
  });
 })();
