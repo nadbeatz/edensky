@@ -110,6 +110,37 @@
   .nav-links{gap:13px}
   .nav-links a:not(.btn){font-size:.84rem}
 }
+
+/* Eden Sky home refinement: full-width header and electronic circuit identity */
+.site-header .wrap{width:calc(100% - 72px);max-width:1480px}
+.site-header .brand{margin-left:0;flex:0 0 auto}
+.site-header .nav{gap:clamp(20px,3vw,54px)}
+.hero{min-height:min(760px,calc(100svh - 78px));display:flex;align-items:center;padding-top:92px;padding-bottom:92px}
+.hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.46;background-image:
+linear-gradient(90deg,transparent 0 8%,rgba(7,189,198,.24) 8.08% 8.18%,transparent 8.26% 100%),
+linear-gradient(0deg,transparent 0 18%,rgba(39,126,146,.18) 18.08% 18.18%,transparent 18.26% 100%),
+linear-gradient(135deg,transparent 0 47%,rgba(7,189,198,.2) 47.08% 47.18%,transparent 47.26% 100%),
+linear-gradient(90deg,transparent 0 72%,rgba(7,189,198,.2) 72.08% 72.18%,transparent 72.26% 100%),
+radial-gradient(circle at 8.1% 18.1%,#07BDC6 0 3px,transparent 4px),
+radial-gradient(circle at 72.1% 47.1%,#62CDCF 0 3px,transparent 4px),
+radial-gradient(circle at 47.1% 72.1%,#277E92 0 3px,transparent 4px);
+background-size:360px 220px,420px 260px,520px 340px,460px 280px,360px 220px,460px 280px,520px 340px;
+mask-image:linear-gradient(90deg,rgba(0,0,0,.8),transparent 92%)}
+.hero-orbit{opacity:.52;right:4%;width:min(54vw,700px)}
+.hero-grid{width:min(1320px,calc(100% - 72px));grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:clamp(40px,7vw,110px)}
+.hero-copy{max-width:720px}
+.logo-panel{max-width:390px}
+.trust-items{width:min(1320px,calc(100% - 72px))}
+@media(max-width:920px){.hero{min-height:unset}.hero-grid{width:min(100% - 44px,760px)}}
+@media(max-width:720px){
+ .site-header .wrap{width:calc(100% - 32px)}
+ .site-header .nav{gap:12px}
+ .hero{min-height:unset;padding-top:66px;padding-bottom:58px}
+ .hero-grid{width:calc(100% - 32px)}
+ .hero:before{opacity:.28;background-size:260px 180px,300px 210px,360px 250px,320px 220px,260px 180px,320px 220px,360px 250px}
+ .hero-orbit{right:-25%;width:88vw}
+ .trust-items{width:calc(100% - 32px)}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
