@@ -339,6 +339,31 @@ body{color-scheme:only light!important;}
   }
 }
 
+
+/* Composição limpa: circuitos nas margens, sem competir com a mensagem */
+@media(max-width:720px){
+  .hero{isolation:isolate;overflow:hidden}
+  .hero:before{
+    inset:42% 0 0 0!important;
+    opacity:.27!important;
+    background-position:right bottom!important;
+    background-size:470px auto!important;
+    background-repeat:no-repeat!important;
+    mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 38%,rgba(0,0,0,.72) 100%)!important;
+    filter:none!important;
+  }
+  .hero-orbit{opacity:.08!important;right:-55%!important}
+  .hero-grid,.hero-grid>div:first-child{position:relative;z-index:2}
+  .hero h1,.hero-copy,.hero-actions,.hero-proof{position:relative;z-index:2}
+}
+@media(min-width:721px){
+  .hero:before{
+    opacity:.34!important;
+    background-position:right center!important;
+    mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 42%,#000 100%)!important;
+  }
+}
+
 </style>
 </head>
 <body>
