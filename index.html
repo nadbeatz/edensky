@@ -364,6 +364,26 @@ body{color-scheme:only light!important;}
   }
 }
 
+
+/* Atalho flutuante WhatsApp */
+.whatsapp-float{
+ position:fixed;right:22px;bottom:82px;z-index:80;
+ display:flex;align-items:center;gap:10px;
+ min-height:54px;padding:0 19px;border-radius:999px;
+ background:#20c767;color:#fff;text-decoration:none;
+ font:800 .92rem Manrope,sans-serif;
+ box-shadow:0 10px 28px rgba(18,160,83,.3);
+ transition:transform .2s,box-shadow .2s;
+}
+.whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(18,160,83,.38)}
+.whatsapp-float svg{width:25px;height:25px;flex:none;fill:currentColor}
+.whatsapp-float span{white-space:nowrap}
+@media(max-width:720px){
+ .whatsapp-float{right:16px;bottom:calc(78px + env(safe-area-inset-bottom));min-height:54px;padding:0 17px}
+ .whatsapp-float span{display:inline}
+}
+@media(prefers-reduced-motion:reduce){.whatsapp-float{transition:none}}
+
 </style>
 </head>
 <body>
@@ -405,4 +425,10 @@ body{color-scheme:only light!important;}
  document.getElementById('year').textContent=String(new Date().getFullYear());
 })();
 </script>
+
+<a class="whatsapp-float" href="https://wa.me/244923914152?text=Olá%20Eden%20Sky!%20Gostaria%20de%20mais%20informações." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Eden Sky pelo WhatsApp">
+ <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.72 12.72 0 0 0 5.08 22.4L3.3 28.9l6.66-1.75A12.8 12.8 0 1 0 16.02 3.2Zm0 23.3c-1.98 0-3.92-.53-5.62-1.54l-.4-.24-3.95 1.04 1.05-3.85-.26-.42a10.5 10.5 0 1 1 9.18 5.01Zm5.76-7.87c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.49-.57.16-.19.22-.32.32-.54.11-.22.06-.4-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.32-1.14 1.11-1.14 2.7s1.17 3.13 1.33 3.35c.16.22 2.3 3.52 5.57 4.94.78.34 1.39.55 1.86.7.78.25 1.49.21 2.05.13.63-.1 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.62-.38Z"/></svg>
+ <span>WhatsApp</span>
+</a>
+
 </body></html>
