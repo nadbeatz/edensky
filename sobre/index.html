@@ -72,35 +72,6 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
 :root,html{color-scheme:only light!important;background-color:#fff;}
 body{color-scheme:only light!important;}
 
-/* FULL-WIDTH DESKTOP LAYOUT — Eden Sky */
-@media (min-width: 721px) {
-  .wrap,
-  .site-header .wrap,
-  .hero-grid,
-  .trust-items {
-    width: calc(100% - clamp(40px, 5.5vw, 112px));
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); }
-  .hero-grid > div:first-child { min-width: 0; }
-  .section > .wrap,
-  .page-hero > .wrap,
-  footer .wrap { max-width: none; }
-}
-@media (min-width: 721px) and (max-width: 1100px) {
-  .wrap, .site-header .wrap, .hero-grid, .trust-items {
-    width: calc(100% - 48px);
-  }
-}
-@media (max-width: 720px) {
-  .wrap, .site-header .wrap, .hero-grid, .trust-items {
-    width: calc(100% - 32px);
-    max-width: none;
-  }
-}
-
 </style></head><body><header class="site-header"><div class="wrap nav">
 <a class="brand" href="/" aria-label="Eden Sky — início"><img src="/IMG_4649.png" alt="Logótipo Eden Sky"></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">☰</button>
