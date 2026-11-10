@@ -196,6 +196,17 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
 }
 
 
+/* Home sem cartão de logótipo: destaque limpo para a mensagem principal */
+.hero-grid{
+  width:min(1160px,calc(100% - 72px));
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+}
+.hero-grid>div:first-child{max-width:850px}
+@media(max-width:720px){
+  .hero-grid{width:calc(100% - 32px)}
+}
+
 /* Home visual correction — calmer hierarchy and refined electronic circuitry */
 .hero{
   min-height:clamp(620px,calc(100svh - 78px),820px);
@@ -288,7 +299,7 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
 <p class="hero-copy">Unimos estratégia, criatividade e comunicação para fortalecer organizações, posicionar marcas e transformar ideias em resultados.</p>
 <div class="hero-actions"><a class="btn" href="/contacto/#pedido">Fale-nos do seu projecto ↗</a><a class="btn outline" href="/servicos/">Explorar soluções</a></div>
 <div class="hero-proof"><i></i><span>Desde 2018 a desenvolver soluções à medida das organizações.</span></div>
-</div><div class="logo-panel"><img src="/IMG_4649.png" alt="Identidade visual da Eden Sky"><p>ESTRATÉGIA QUE ELEVA MARCAS</p></div></div></section>
+</div></div></section>
 <div class="trust-strip"><div class="wrap trust-items"><div class="trust-item"><b>01</b> Visão estratégica integrada</div><div class="trust-item"><b>02</b> Soluções personalizadas</div><div class="trust-item"><b>03</b> Criatividade com propósito</div></div></div>
 </main>
 <footer><div class="wrap foot"><span>© <span id="year">2026</span> Eden Sky. Todos os direitos reservados.</span><span>Consultoria · Comunicação · Marketing</span><a href="#inicio">Voltar ao início ↑</a></div></footer>
