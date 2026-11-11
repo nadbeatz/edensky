@@ -6,4 +6,6 @@
   <url><loc>https://edensky.org/portfolio/</loc></url>
   <url><loc>https://edensky.org/metodo/</loc></url>
   <url><loc>https://edensky.org/contacto/</loc></url>
+  <url><loc>https://edensky.org/parceiros/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edensky.org/actualidade/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
