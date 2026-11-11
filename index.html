@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light">
 <meta name="robots" content="index,follow">
-<title>Eden Sky — Consultoria, Comunicação e Marketing</title>
-<meta name="description" content="A Eden Sky é uma empresa angolana de consultoria empresarial, comunicação institucional, marketing, branding e produção audiovisual. Conheça as nossas soluções.">
+<title>Consultoria Empresarial e Comunicação em Angola | Eden Sky</title>
+<meta name="description" content="A Eden Sky oferece consultoria empresarial, comunicação institucional, marketing digital e branding em Angola. Estratégia e criatividade para fortalecer organizações e marcas.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_AO">
 <meta name="twitter:title" content="Eden Sky — Sua marca, nosso compromisso">
@@ -15,8 +15,8 @@
 <link rel="canonical" href="https://edensky.org/">
 <meta property="og:url" content="https://edensky.org/">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/nadbeatz/edensky/main/IMG_4649.png">
-<meta property="og:title" content="Eden Sky — Sua marca, nosso compromisso">
-<meta property="og:description" content="Estratégia, criatividade e comunicação para impulsionar organizações.">
+<meta property="og:title" content="Eden Sky | Consultoria Empresarial, Comunicação e Branding">
+<meta property="og:description" content="Consultoria empresarial, comunicação institucional, marketing e branding para empresas, instituições e marcas em Angola.">
 <meta property="og:image" content="https://raw.githubusercontent.com/nadbeatz/edensky/main/IMG_4649.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/IMG_4649.png">
@@ -391,15 +391,84 @@ body{color-scheme:only light!important;}
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://edensky.org/#organization",
       "name": "Eden Sky",
       "url": "https://edensky.org/",
-      "description": "Empresa angolana orientada para consultoria empresarial, comunicação institucional, marketing, branding, design e produção audiovisual."
+      "description": "A Eden Sky oferece consultoria empresarial, comunicação institucional, marketing digital e branding em Angola. Estratégia e criatividade para fortalecer organizações e marcas.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Angola"
+      },
+      "knowsAbout": [
+        "Consultoria empresarial",
+        "Comunicação institucional",
+        "Marketing digital",
+        "Branding",
+        "Identidade visual",
+        "Planeamento estratégico",
+        "Produção audiovisual"
+      ]
     },
     {
       "@type": "WebSite",
+      "@id": "https://edensky.org/#website",
       "name": "Eden Sky",
       "url": "https://edensky.org/",
-      "inLanguage": "pt-AO"
+      "inLanguage": "pt-AO",
+      "publisher": {
+        "@id": "https://edensky.org/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://edensky.org/#webpage",
+      "url": "https://edensky.org/",
+      "name": "Consultoria Empresarial e Comunicação em Angola | Eden Sky",
+      "description": "A Eden Sky oferece consultoria empresarial, comunicação institucional, marketing digital e branding em Angola. Estratégia e criatividade para fortalecer organizações e marcas.",
+      "inLanguage": "pt-AO",
+      "isPartOf": {
+        "@id": "https://edensky.org/#website"
+      },
+      "about": {
+        "@id": "https://edensky.org/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Que tipo de organizações podem trabalhar com a Eden Sky?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabalhamos com organizações, instituições, marcas e iniciativas que procuram apoio em consultoria, comunicação, marketing, design ou produção audiovisual. O enquadramento é definido conforme cada necessidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como posso solicitar uma proposta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre em contacto e partilhe o objectivo, o serviço pretendido e, se possível, o prazo. A equipa poderá analisar o pedido e orientar os próximos passos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Eden Sky desenvolve soluções personalizadas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A abordagem e as entregas são ajustadas ao contexto, aos objectivos e ao âmbito acordado para cada projecto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como começo a trabalhar convosco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O primeiro passo é uma conversa para compreender o desafio. A partir daí, podem ser definidos o âmbito de trabalho e uma proposta adequada."
+          }
+        }
+      ]
     }
   ]
 }
