@@ -73,6 +73,38 @@ main,section,article,.wrap,.grid,.contact-grid,.card{min-width:0;}
 :root,html{color-scheme:only light!important;background-color:#fff;}
 body{color-scheme:only light!important;}
 
+
+/* Eden Sky — identidade institucional clássica baseada no logótipo */
+:root{
+ --cyan:#21C2C8;--aqua:#62C7C9;--blue:#247B8F;
+ --silver:#ACAEAF;--gray:#CECED0;--ink:#26363C;--muted:#68777B;
+ --paper:#FFFFFF;--mist:#F5F7F7;--line:#E3E7E8;
+ --grad:linear-gradient(110deg,#21C2C8 0%,#247B8F 100%);
+ --shadow:0 12px 32px rgba(36,123,143,.08);
+}
+html,body{background:var(--paper);color:var(--ink)}
+h1,h2,h3,h4{color:var(--ink)}
+h1 span,.gradient-text{background:none!important;color:var(--blue)!important}
+.eyebrow{color:var(--blue)}
+.eyebrow:before{background:var(--cyan)}
+.site-header{background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 3px 16px rgba(38,54,60,.025)}
+.nav-links a[aria-current=page],.nav-links a:hover{color:var(--blue)}
+.btn,.nav-links .btn,.cta .btn{
+ background:var(--blue);color:#fff;border:1px solid var(--blue);
+ box-shadow:none;transition:background .2s ease,border-color .2s ease,transform .2s ease;
+}
+.btn:hover,.nav-links .btn:hover,.cta .btn:hover{background:#1B6577;border-color:#1B6577;transform:translateY(-1px)}
+.btn.secondary,.btn-outline{background:#fff;color:var(--blue);border:1px solid #B9D2D6;box-shadow:none}
+.mist,.card,.service-card,.news-card,.partner,.project-card,.method-card{
+ background-color:#fff;border-color:var(--line);
+}
+.card,.service-card,.news-card,.partner,.project-card,.method-card{box-shadow:0 8px 26px rgba(38,54,60,.045)}
+a{ text-decoration-color:rgba(36,123,143,.35) }
+::selection{background:rgba(33,194,200,.22);color:var(--ink)}
+input,select,textarea{border-color:#D5DEE0!important}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(33,194,200,.7);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.btn,.nav-links .btn{transition:none}}
+
 </style></head><body><header class="site-header"><div class="wrap nav">
 <a class="brand" href="/" aria-label="Eden Sky — início"><img src="/IMG_4649.png" alt="Logótipo Eden Sky" fetchpriority="high" decoding="async"></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">☰</button>
