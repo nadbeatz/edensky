@@ -105,6 +105,22 @@ input,select,textarea{border-color:#D5DEE0!important}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(33,194,200,.7);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.btn,.nav-links .btn{transition:none}}
 
+
+/* Eden Sky — imagem editorial discreta por página */
+.page-hero,.hero{
+ background-image:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 43%,rgba(255,255,255,.64) 72%,rgba(255,255,255,.34) 100%),url('/pyramid-of-blank-white-cube-blocks-on-table-2025-02-21-00-06-53-utc.jpg')!important;
+ background-position:center right!important;
+ background-size:cover!important;
+ background-repeat:no-repeat!important;
+}
+.page-hero{min-height:360px}
+@media(max-width:700px){
+ .page-hero,.hero{
+  background-image:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.82)),url('/pyramid-of-blank-white-cube-blocks-on-table-2025-02-21-00-06-53-utc.jpg')!important;
+  background-position:62% center!important;
+ }
+ .page-hero{min-height:unset}
+}
 </style><script type="application/ld+json">
 {
   "@context":"https://schema.org",
