@@ -557,6 +557,23 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   ]
 }
 </script>
+
+<style>
+/* Hero visual: imagens reais do repositório, com carregamento responsivo */
+.hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr)!important;gap:clamp(34px,6vw,88px)!important;align-items:center}
+.hero-visual{position:relative;width:100%;max-width:570px;margin:0;justify-self:end;isolation:isolate}
+.hero-main-image{display:block;width:100%;aspect-ratio:1.16/1;object-fit:cover;object-position:center;border-radius:30px;box-shadow:0 28px 75px rgba(20,75,87,.19);border:1px solid rgba(255,255,255,.8)}
+.hero-image-caption{position:absolute;left:-28px;bottom:28px;display:flex;align-items:center;gap:13px;padding:15px 20px;border:1px solid rgba(255,255,255,.8);border-radius:17px;background:rgba(255,255,255,.94);box-shadow:0 15px 42px rgba(20,75,87,.16);backdrop-filter:blur(12px)}
+.caption-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:linear-gradient(135deg,#07BDC6,#277E92);color:white;font:800 .9rem Manrope}
+.hero-image-caption strong,.hero-image-caption small{display:block}
+.hero-image-caption strong{font:800 .9rem Manrope;color:var(--ink)}
+.hero-image-caption small{margin-top:3px;color:var(--muted);font-size:.76rem}
+.hero-detail-image{position:absolute;z-index:2;right:-24px;top:-24px;width:118px;height:118px;object-fit:cover;border:7px solid white;border-radius:22px;box-shadow:0 12px 35px rgba(20,75,87,.18)}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr!important}.hero-visual{justify-self:start;max-width:520px;margin:4px auto 0}.hero-image-caption{left:12px}}
+@media(max-width:720px){.hero-visual{width:100%;max-width:440px;margin-top:12px}.hero-main-image{aspect-ratio:1.18/1;border-radius:22px}.hero-detail-image{width:82px;height:82px;right:-7px;top:-12px;border-width:5px;border-radius:16px}.hero-image-caption{left:9px;bottom:12px;padding:10px 13px;gap:9px;border-radius:13px}.caption-mark{width:35px;height:35px;border-radius:10px;font-size:.75rem}.hero-image-caption strong{font-size:.8rem}.hero-image-caption small{font-size:.68rem}}
+@media(max-width:390px){.hero-detail-image{width:70px;height:70px}.hero-image-caption{padding:9px 10px}.hero-image-caption small{max-width:165px}}
+</style>
+
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
@@ -571,7 +588,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 <p class="hero-copy">Unimos estratégia, criatividade e comunicação para fortalecer organizações, posicionar marcas e transformar ideias em resultados.</p>
 <div class="hero-actions"><a class="btn" href="/contacto/#pedido">Fale-nos do seu projecto ↗</a><a class="btn outline" href="/servicos/">Explorar soluções</a></div>
 <div class="hero-proof"><i></i><span>Desde 2018 a desenvolver soluções à medida das organizações.</span></div>
-</div></div></section>
+</div>
+<figure class="hero-visual">
+  <img class="hero-main-image" src="/cropped-shot-of-african-american-businessman-holdi-2024-11-17-09-22-55-utc.jpg" alt="Profissional a analisar oportunidades de negócio e estratégia empresarial" fetchpriority="high" decoding="async">
+  <figcaption class="hero-image-caption"><span class="caption-mark">ES</span><span><strong>Estratégia com visão.</strong><small>Comunicação que gera impacto.</small></span></figcaption>
+  <img class="hero-detail-image" src="/pyramid-of-blank-white-cube-blocks-on-table-2025-02-21-00-06-53-utc.jpg" alt="Composição visual sobre planeamento e construção estratégica" loading="lazy" decoding="async">
+</figure>
+</div></section>
 </main>
 <footer><div class="wrap foot"><span>© <span id="year">2026</span> Eden Sky. Todos os direitos reservados.</span></div></footer>
 
