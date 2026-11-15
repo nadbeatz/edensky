@@ -91,3 +91,75 @@
 .page-hero.actualidade-hero h1 span{color:#e4c27b}
 .page-hero.actualidade-hero .lead{color:rgba(255,255,255,.94)}
 @media(max-width:760px){.page-hero.actualidade-hero{min-height:360px;background-position:58% center}}
+
+
+/* Eden Sky — tipografia e linguagem visual inspiradas nas referências fornecidas */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --navy:#26343b;
+  --navy-2:#1f7180;
+  --gold:#2b8190;
+  --ivory:#f7f7f4;
+  --ink:#26343b;
+  --muted:#707b80;
+  --line:#e4e8e8;
+  --shadow:0 18px 50px rgba(38,52,59,.09);
+  --sans:'Montserrat',Arial,sans-serif;
+  --serif:'Montserrat',Arial,sans-serif;
+}
+html,body,button,input,select,textarea{font-family:'Montserrat',Arial,sans-serif}
+body{font-size:16px;line-height:1.75;color:#26343b}
+h1,h2,h3,h4,.hero h1,.page-hero h1,.section h2,.section h3{
+  font-family:'Montserrat',Arial,sans-serif;
+  letter-spacing:-.045em;
+}
+.hero h1,.page-hero h1{
+  font-weight:900;
+  line-height:1.04;
+  text-transform:uppercase;
+  max-width:1000px;
+}
+.section h2{font-weight:800;line-height:1.12}
+.section h3{font-weight:750;line-height:1.2}
+.eyebrow{
+  color:#287d8c;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.eyebrow:before{background:#35a2aa}
+.hero-copy,.lead,.section-intro p,.card p,.service p,.step p,.work-card p,.partner-card p{
+  font-family:'Montserrat',Arial,sans-serif;
+  color:#707b80;
+  font-weight:400;
+  line-height:1.8;
+}
+.hero-copy,.lead{font-size:clamp(1.02rem,1.45vw,1.22rem)}
+.btn{
+  min-height:58px;
+  padding:15px 28px;
+  border-radius:999px;
+  background:#287f8e;
+  border-color:#287f8e;
+  font-family:'Montserrat',Arial,sans-serif;
+  font-size:.96rem;
+  font-weight:700;
+  letter-spacing:0;
+  text-transform:none;
+}
+.btn:hover{background:#216c79;border-color:#216c79}
+.btn.secondary,.btn.outline{
+  background:rgba(255,255,255,.78);
+  color:#287f8e;
+  border:1px solid rgba(40,127,142,.28);
+}
+.btn.secondary:hover,.btn.outline:hover{background:#edf5f5}
+.nav-links a:not(.btn){font-family:'Montserrat',Arial,sans-serif;font-weight:600}
+.partner-grid span{font-family:'Montserrat',Arial,sans-serif}
+@media(max-width:760px){
+  .hero h1,.page-hero h1{font-size:clamp(2.55rem,10.8vw,4.2rem);line-height:1.06}
+  .hero-copy,.lead{font-size:1rem;line-height:1.8}
+  .eyebrow{font-size:.69rem;letter-spacing:.11em}
+  .btn{min-height:58px;font-size:.92rem}
+}
