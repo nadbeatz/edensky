@@ -35,3 +35,21 @@
 .hero-clean .hero-actions{margin-top:34px}
 .hero-clean .hero-proof{margin-top:28px}
 @media(max-width:760px){.hero-clean{padding:68px 0 64px}.hero-clean .hero-copy-block{max-width:none}.hero-clean .hero-actions{gap:10px}.hero-clean .hero-actions .btn{width:100%}}
+
+/* Botão flutuante WhatsApp — tamanho e posicionamento responsivos */
+.whatsapp-float{
+  position:fixed;right:24px;bottom:24px;z-index:120;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-width:56px;min-height:56px;padding:0 18px;
+  border:0;border-radius:999px;background:#168b55;color:#fff;
+  box-shadow:0 8px 26px rgba(16,37,50,.22);
+  font:600 .9rem/1 var(--sans);text-decoration:none;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.whatsapp-float:hover{background:#117747;color:#fff;transform:translateY(-2px);box-shadow:0 11px 30px rgba(16,37,50,.26)}
+.whatsapp-float:focus-visible{outline:3px solid #b69a67;outline-offset:4px}
+.whatsapp-float svg{display:block;flex:0 0 25px;width:25px;height:25px;max-width:25px;max-height:25px;fill:currentColor}
+.whatsapp-float span{display:inline}
+@media(max-width:600px){
+  .whatsapp-float{right:16px;bottom:16px;min-width:54px;min-height:54px;padding:0 16px}
+}
