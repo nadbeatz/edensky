@@ -202,7 +202,6 @@ h1,h2,h3,h4,.hero h1,.page-hero h1,.section h2,.section h3{
 }
 
 /* Fundos gráficos leves, sem imagens externas */
-.brand-wordmark{display:inline-flex;align-items:baseline;gap:.22em;text-decoration:none;color:#174A3B;font:700 1.65rem/1 Georgia,"Times New Roman",serif;letter-spacing:-.045em}.brand-wordmark span{color:#b69a67}
 .hero-home,.about-hero,.portfolio-hero,.partners-hero,.page-hero.contact-hero,.page-hero.method-hero{background-color:#174A3B!important;background-image:radial-gradient(ellipse at 82% 18%,rgba(182,154,103,.22),transparent 36%),linear-gradient(125deg,#123c30 0%,#174A3B 58%,#205B46 100%)!important}
 .hero-home:before,.about-hero:before,.portfolio-hero:before,.partners-hero:before,.page-hero.contact-hero:before,.page-hero.method-hero:before{background:linear-gradient(90deg,rgba(10,43,33,.96),rgba(10,43,33,.82) 62%,rgba(10,43,33,.45))!important}
 .hero-home:after,.about-hero:after,.portfolio-hero:after,.partners-hero:after,.page-hero.contact-hero:after,.page-hero.method-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(135deg,transparent 0 46px,rgba(182,154,103,.10) 47px,transparent 48px 94px)!important;opacity:.55}
