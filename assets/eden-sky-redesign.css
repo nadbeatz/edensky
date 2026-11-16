@@ -426,3 +426,30 @@ a:focus-visible,button:focus-visible{
 @media(prefers-reduced-motion:reduce){
   .card,.service,.step,.work-card,.partner-card,.partner-grid span,.partner,.btn{transition:none!important}
 }
+
+
+/* Correcção de contraste — hero da página inicial */
+.hero-home h1{
+  color:#174A3B!important;
+  text-shadow:none!important;
+}
+.hero-home h1 span{
+  color:#2b8190!important;
+}
+.hero-home .hero-copy{
+  color:#536168!important;
+}
+.hero-home .hero-proof{
+  color:#536168!important;
+}
+.hero-home .eyebrow{
+  color:#287d8c!important;
+}
+.hero-home .hero-home-circuit{
+  pointer-events:none;
+}
+@media(max-width:760px){
+  .hero-home h1{color:#174A3B!important}
+  .hero-home h1 span{color:#2b8190!important}
+  .hero-home .hero-copy,.hero-home .hero-proof{color:#536168!important}
+}
