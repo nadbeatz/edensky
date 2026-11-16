@@ -5,7 +5,7 @@
   const nav = document.querySelector('.nav-links');
   if (!header || !toggle || !nav) return;
 
-  const mobileQuery = window.matchMedia('(max-width: 760px)');
+  const mobileQuery = window.matchMedia('(max-width: 900px)');
   const focusable = () => [...nav.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')]
     .filter(el => el.getClientRects().length > 0);
 
