@@ -254,3 +254,35 @@ h1,h2,h3,h4,.hero h1,.page-hero h1,.section h2,.section h3{
   }
   .site-header .nav-links .btn{margin-top:14px}
 }
+
+
+/* Fundos verdes em todos os cabeçalhos internos das páginas */
+.page-hero{
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#174A3B!important;
+  background-image:radial-gradient(ellipse at 84% 16%,rgba(182,154,103,.22),transparent 38%),linear-gradient(125deg,#123c30 0%,#174A3B 58%,#205B46 100%)!important;
+  border-bottom:1px solid rgba(182,154,103,.32)!important;
+}
+.page-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(90deg,rgba(10,43,33,.94),rgba(10,43,33,.78) 64%,rgba(10,43,33,.48))!important;
+}
+.page-hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:repeating-linear-gradient(135deg,transparent 0 46px,rgba(182,154,103,.10) 47px,transparent 48px 94px)!important;
+  opacity:.55;
+}
+.page-hero>.wrap{position:relative;z-index:1}
+.page-hero h1{color:#fff!important}
+.page-hero h1 span{color:#e4c27b!important}
+.page-hero .eyebrow{color:#f0d69b!important}
+.page-hero .lead{color:rgba(255,255,255,.94)!important}
