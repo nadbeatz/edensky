@@ -622,3 +622,63 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(prefers-reduced-motion:reduce){
   .service,.card,.step,.work-card,.partner-card{transition:none!important}
 }
+
+
+/* Correcção específica — Parceiros: contraste e composição móvel */
+.hero.partners-hero h1,
+.hero.partners-hero h1:not(span){
+  color:#FFFFFF!important;
+  text-shadow:0 2px 18px rgba(0,0,0,.12);
+}
+.hero.partners-hero h1 span{color:#E4C27B!important}
+.hero.partners-hero .eyebrow{color:#F0D69B!important}
+.hero.partners-hero .lead{
+  color:rgba(255,255,255,.94)!important;
+  max-width:760px;
+  font-size:clamp(1rem,1.2vw,1.12rem);
+  line-height:1.75;
+}
+.partners-section .partners-intro p,
+.partners-section .partner-group>p{
+  color:#59666B!important;
+  opacity:1!important;
+  font-size:.98rem;
+  line-height:1.8;
+}
+.partners-section .partners-intro h2,
+.partners-section .partner-group h2{color:#174A3B!important}
+@media(max-width:760px){
+  .hero.partners-hero{
+    min-height:0;
+    padding:54px 0 48px;
+    background-position:center;
+  }
+  .hero.partners-hero h1{
+    max-width:100%;
+    font-size:clamp(2.05rem,8.2vw,3rem);
+    line-height:1.08;
+    letter-spacing:-.045em;
+  }
+  .hero.partners-hero .eyebrow{
+    font-size:.66rem;
+    letter-spacing:.12em;
+    line-height:1.6;
+    margin-bottom:17px;
+  }
+  .hero.partners-hero .lead{
+    margin-top:20px;
+    font-size:.98rem;
+    line-height:1.72;
+  }
+  .partners-section{padding-top:48px}
+  .partners-section .partners-intro h2{
+    font-size:clamp(1.7rem,7vw,2.25rem);
+    line-height:1.16;
+  }
+  .partners-section .partners-intro p,
+  .partners-section .partner-group>p{
+    color:#59666B!important;
+    font-size:.94rem;
+    line-height:1.75;
+  }
+}
